@@ -8,6 +8,7 @@
     <link href="css/CWStylesheet.css" rel="stylesheet" type="text/css"/>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="./js/Validation.js"></script>
     <style>
         /* Remove the navbar's default margin-bottom and rounded borders */
         .navbar {
@@ -52,7 +53,7 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href="#">Logo</a>
+            <a class="navbar-brand" href="HomePage.html">Logo</a>
         </div>
         <div class="collapse navbar-collapse" id="myNavbar">
             <ul class="nav navbar-nav">
@@ -60,7 +61,7 @@
                     <div class="dropdown">
                         <button class="dropbtn">MLA</button>
                         <div class="dropdown-content">
-                            <a href="MLA Book Citation.php">Book</a>
+                            <a href="#">Book</a>
                             <a href="#">Website</a>
                             <a href="#">Film</a>
                         </div>
@@ -106,8 +107,39 @@
         <div class="col-sm-2 sidenav">
         </div>
         <div class="col-sm-8 text-left">
-            <h1>Welcome</h1>
-            <p>This website is intended to provide an easy citation creator for various citation styles.  To choose which type of citation is needed look to the navigation bar and dropdown menus will be dispalyed for each citation style.  Choose what you need and it will take you to a new page asking for information about the style.  Fill that info out and submit it and you will receive a fully created citation back.</p>
+            <h1>MLA Book Citation</h1>
+            <p>Fill out the form below and submit to receive the citation.</p>
+            <hr>
+            <br/>
+            <form name="form1" method="POST">
+                <label> Author's First Name
+                    <br/>
+                    <input type="text" name="First Name" id="First Name" size="30"/>
+                </label>
+                <label> Author's Last Name
+                    <br/>
+                    <input type="text" name="Last Name" id="Last Name" size="30"/>
+                </label>
+                <label> Title of Book
+                    <br/>
+                    <input type="text" name="Title" id="Title" size="30"/>
+                </label>
+                <label> City of Publication
+                    <br/>
+                    <input type="text" name="City" id="City" size="30"/>
+                </label>
+                <label> Publisher
+                    <br/>
+                    <input type="text" name="Publisher" id="Publisher" size="30"/>
+                </label>
+                <label> Publication Date (Year)
+                    <br/>
+                    <input type="text" name="Year" id="Year" size="30"/>
+                </label>
+                <br/>
+                <input type="submit" value="Submit Order" id="submit"/>
+                <input type="reset" value="Clear Order Form"/>
+            </form>
         </div>
         <div class="col-sm-2 sidenav">
         </div>
