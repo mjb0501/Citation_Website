@@ -137,9 +137,12 @@
                     <input type="text" name="Year" id="Year" size="30"/>
                 </label>
                 <br/>
-                <input type="submit" value="Submit Order" id="submit"/>
+                <input type="button" value="Submit" id="submit"/>
                 <input type="reset" value="Clear Order Form"/>
             </form>
+            <div>
+                <p id="citations"></p>
+            </div>
         </div>
         <div class="col-sm-2 sidenav">
         </div>
